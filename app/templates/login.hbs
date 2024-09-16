@@ -1,0 +1,117 @@
+<div class="au-c-main-container" itemprop="mainContentOfPage">
+  <div
+    class="au-c-main-container__content au-c-main-container__content--scroll"
+  >
+    <main id="content">
+      <AuContentHeader
+        @titlePartOne="Vlaanderen"
+        @titlePartTwo="is lokaal bestuur"
+      >
+        <img
+          sizes="50vw"
+          src="/assets/images/header-1600.jpg"
+          srcset="/assets/images/header-320.jpg 320w, /assets/images/header-1024.jpg 1024w, /assets/images/header-1600.jpg 1600w"
+          alt="Foto van een laptop met daarop het vlaanderen logo."
+        />
+      </AuContentHeader>
+
+      <section class="au-o-region-large">
+        <div class="au-o-layout">
+          <div class="au-o-grid au-o-grid--small">
+            <div class="au-o-grid__item au-u-3-4@small au-u-1-2@medium">
+              <AuContent @skin="large">
+                <h1>SubsidiePunt</h1>
+                <p>Controleer tot welke organisaties u toegang hebt via deze
+                  <AuLinkExternal
+                    href="https://mijnprofiel-gebruikersbeheer.vlaanderen.be/user/"
+                  >link</AuLinkExternal>. U kan toegang aanvragen door middel
+                  van
+                  <AuLinkExternal
+                    href="https://zelfregistratie-gebruikersbeheer.vlaanderen.be/user/aanvraag?&an=287&dg=LB&ec=ABB_LoketLB_LB_CompEnt_Gebruiker"
+                  >zelfregistratie</AuLinkExternal>. Uw interne beheerder zal de
+                  toegangsaanvraag behandelen.</p>
+                <p>Lukt het aanmelden niet? Neem contact op met uw interne
+                  beheerder. Indien er zich een probleem voordoet, contacteer
+                  <AuLinkExternal
+                    href="https://overheid.vlaanderen.be/ict/ict-diensten/gebruikersbeheer"
+                  >gebruikersbeheer Vlaanderen</AuLinkExternal>.</p>
+              </AuContent>
+            </div>
+            <div
+              class="au-o-grid__item au-u-1-4@small au-u-1-2@medium au-u-text-right@medium"
+            >
+              <LoginButton />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="au-o-region-large au-u-background-gray-200">
+        <div class="au-o-layout">
+          <AuContent @skin="large" class="au-u-margin-bottom">
+            <AuHeading @level="2" @skin="3" class="au-u-margin-bottom">De functionaliteiten van SubsidiePunt</AuHeading>
+          </AuContent>
+          <div class="au-o-grid au-o-grid--small">
+            <div class="au-o-grid__item au-u-1-2@small">
+              <AuCard @textCenter="true" as |c|>
+                <c.header @badgeSkin="brand" @badgeIcon="pencil">
+                  <AuHeading @level="3" @skin="4">
+                    Functionaliteit
+                  </AuHeading>
+                </c.header>
+                <c.content>
+                  <AuList
+                    @direction="vertical"
+                    @divider={{true}}
+                    as |Item|>
+                  <Item>
+                    Bekijken van subsidies
+                    </Item>
+                    <Item>
+                      Indienen van subsidies
+                    </Item>
+                    <Item>
+                      Opvolgen van subsidie aanvragen
+                    </Item>
+                  </AuList>
+                </c.content>
+                <c.footer>
+                </c.footer>
+              </AuCard>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <AuMainFooter>
+      <FooterHeading />
+      <AuContent @skin="small">
+        <p>Uitgegeven door
+          <a
+            class="au-c-link"
+            href="https://www.vlaanderen.be/organisaties/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-kanselarij-en-bestuur/agentschap-binnenlands-bestuur"
+          >Agentschap Binnenlands Bestuur</a></p>
+        <ul class="au-c-list-horizontal">
+          <li class="au-c-list-horizontal__item">
+            <AuLink
+              @route="legaal.disclaimer"
+              @skin="secondary"
+            >Disclaimer</AuLink>
+          </li>
+          <li class="au-c-list-horizontal__item">
+            <AuLink
+              @route="legaal.cookieverklaring"
+              @skin="secondary"
+            >Cookieverklaring</AuLink>
+          </li>
+          <li class="au-c-list-horizontal__item">
+            <AuLink
+              @route="legaal.toegankelijkheidsverklaring"
+              @skin="secondary"
+            >Toegankelijkheid</AuLink>
+          </li>
+        </ul>
+      </AuContent>
+    </AuMainFooter>
+  </div>
+</div>
