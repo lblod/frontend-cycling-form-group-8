@@ -31,24 +31,6 @@ export default class SubsidyApplicationsAvailableSubsidiesRoute extends Route.ex
       ].join(','),
     };
 
-    if (params.testMode) {
-      return query;
-    } else {
-      // Add extra rules to available subsidies
-      const today = new Date();
-
-      query[
-        'filter[active-application-flow][first-application-step][subsidy-procedural-step][period]'
-      ] = {
-        ':lte:begin': today.toISOString(),
-        ':gte:end': today.toISOString(),
-      };
-
-      query[
-        'filter[subsidy-measure-offer][criteria][requirement-groups][criterion-requirements][:exact:is-satisfiable-by]'
-      ] = this.currentSession.groupClassification.uri;
-
-      return query;
-    }
+    return query;
   }
 }
