@@ -15,19 +15,19 @@ export default class BreadCrumbComponent extends Component {
     },
     {
       route: 'subsidy.applications.edit',
-      crumbs: [{ label: 'Bekijk subsidieaanvraag' }],
+      crumbs: [{ label: 'Bekijk aanvraag' }],
     },
     {
       route: 'subsidy.applications.edit.step',
-      crumbs: [{ label: 'Bekijk subsidieaanvraag' }],
+      crumbs: [{ label: 'Bekijk aanvraag' }],
     },
     {
       route: 'subsidy.applications.edit.step.new_error',
-      crumbs: [{ label: 'Bekijk subsidieaanvraag' }],
+      crumbs: [{ label: 'Bekijk aanvraag' }],
     },
     {
       route: 'subsidy.applications.edit.step.edit',
-      crumbs: [{ label: 'Bekijk subsidieaanvraag' }],
+      crumbs: [{ label: 'Bekijk aanvraag' }],
     },
   ];
 
