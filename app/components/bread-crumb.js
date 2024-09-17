@@ -11,7 +11,7 @@ export default class BreadCrumbComponent extends Component {
     },
     {
       route: 'subsidy.applications.available-subsidies',
-      crumbs: [{ label: 'Beschikbare subsidiemaatregelen' }],
+      crumbs: [{ label: 'Beschikbare maatregelenen' }],
     },
     {
       route: 'subsidy.applications.edit',

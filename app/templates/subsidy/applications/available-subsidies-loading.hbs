@@ -3,13 +3,13 @@
 <AuToolbar @border="bottom" @size="large" @nowrap="{{true}}" as |Group|>
   <Group class="au-u-1-2@medium">
     <div>
-      <AuHeading @skin="2">Beschikbare subsidiemaatregelen</AuHeading>
+      <AuHeading @skin="2">Beschikbare Aanvragen</AuHeading>
       <p>
-        Kies een van de subsidiemaatregelen om een nieuwe aanvraag te starten.
+        Kies een van de maatregelenen om een nieuwe aanvraag te starten.
         Bekijk
         <AuLinkExternal
           href="https://www.vlaanderen.be/lokaal-bestuur/loket-voor-lokale-besturen/subsidiebeheer"
-        >inhoudelijke informatie over de subsidies</AuLinkExternal>
+        >inhoudelijke informatie over de aanvraag</AuLinkExternal>
         die je hier kan aanvragen.
       </p>
     </div>
@@ -17,7 +17,7 @@
   <Group>
     <LinkTo @route="subsidy.applications" class="au-c-button au-c-button--secondary" type="button">
       <AuIcon @icon="arrow-left" @alignment="left"/>
-      Terug naar lopende subsidiedossiers
+      Terug naar lopende aanvragen
     </LinkTo>
   </Group>
 </AuToolbar>
@@ -28,7 +28,7 @@
       <tr>
         <th>
           <span class="au-c-data-table__header-title au-c-data-table__header-title--sortable">
-          Subsidiemaatregel
+          maatregelen
             <button class="au-c-data-table__sort" type="button">
             <AuIcon @icon="nav-up-down" @alignment="right"/>
             </button>
@@ -44,7 +44,7 @@
         </th>
         <th>
           <span class="au-c-data-table__header-title au-c-data-table__header-title--sortable">
-          Informatie subsidiemaatregel
+          Informatie maatregelen
             <button class="au-c-data-table__sort" type="button">
             <AuIcon @icon="nav-up-down" @alignment="right"/>
             </button>

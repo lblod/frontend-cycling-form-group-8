@@ -1,15 +1,15 @@
-{{page-title "Beschikbare subsidiemaatregelen"}}
+{{page-title "Beschikbare maatregelenen"}}
 
 <AuToolbar @border="bottom" @size="large" @nowrap="{{true}}" as |Group|>
   <Group class="au-u-1-2@medium">
     <div>
-      <AuHeading @skin="2">Beschikbare subsidiemaatregelen</AuHeading>
+      <AuHeading @skin="2">Beschikbare maatregelenen</AuHeading>
       <p>
-        Kies een van de subsidiemaatregelen om een nieuwe aanvraag te starten.
+        Kies een van de maatregelenen om een nieuwe aanvraag te starten.
         Bekijk
         <AuLinkExternal
           href="https://www.vlaanderen.be/lokaal-bestuur/loket-voor-lokale-besturen/subsidiebeheer"
-        >inhoudelijke informatie over de subsidies</AuLinkExternal>
+        >inhoudelijke informatie over de aanvragen</AuLinkExternal>
         die je hier kan aanvragen.
       </p>
     </div>
@@ -21,7 +21,7 @@
       type="button"
     >
       <AuIcon @icon="arrow-left" @alignment="left" />
-      Terug naar lopende subsidiedossiers
+      Terug naar lopende dossieren
     </LinkTo>
   </Group>
 </AuToolbar>
@@ -29,7 +29,7 @@
 <AuDataTable
   @content={{this.model}}
   @isLoading={{this.isLoadingModel}}
-  @noDataMessage="Geen beschikbare subsidiemaatregelen gevonden"
+  @noDataMessage="Geen beschikbare maatregelenen gevonden"
   @sort={{this.sort}}
   @page={{this.page}}
   @size={{this.size}}
@@ -40,7 +40,7 @@
       <AuDataTableThSortable
         @field="subsidyMeasureOffer.title"
         @currentSorting={{this.sort}}
-        @label="Subsidiemaatregel"
+        @label="maatregelen"
       />
       <AuDataTableThSortable
         @field="title"
@@ -50,7 +50,7 @@
       <AuDataTableThSortable
         @field="subsidyMeasureOffer.externalInformation"
         @currentSorting={{this.sort}}
-        @label="Informatie subsidiemaatregel"
+        @label="Informatie maatregelen"
       />
       <AuDataTableThSortable
         @field="activeApplicationFlow.firstApplicationStep.subsidyProceduralStep.period.end"
