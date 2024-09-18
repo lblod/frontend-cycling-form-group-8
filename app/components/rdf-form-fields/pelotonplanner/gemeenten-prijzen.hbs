@@ -12,18 +12,12 @@
       </tr>
     </:header>
     <:body>
-      <tr>
-        <td><strong>Aalst</strong></td>
-        <td>25€</td>
-      </tr>
-      <tr>
-        <td><strong>Dendermonde</strong></td>
-        <td>75€</td>
-      </tr>
-      <tr>
-        <td><strong>Aalst</strong></td>
-        <td>25€</td>
-      </tr>
+      {{#each this.municipalities as |municipality|}}
+        <tr>
+          <td><strong>{{municipality.name}}</strong></td>
+          <td>--</td>
+        </tr>
+      {{/each}}
     </:body>
     <:footer>
       <tr>
