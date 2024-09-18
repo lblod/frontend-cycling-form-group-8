@@ -3,7 +3,7 @@ import { action } from "@ember/object";
 import { tracked } from "@glimmer/tracking";
 
 export default class GemeentenPrijzen extends Component {
-  @tracked municipalities; // array of objects; each object has 'postalCode', 'name' and 'uri'
+  @tracked municipalities; // array of objects; each object has 'postalCode', 'name', 'uri' and 'cost'
 
   @action
   async fetchMunicipalities() {
@@ -12,7 +12,19 @@ export default class GemeentenPrijzen extends Component {
     const response = await fetch(`/gpx/municipalities?id=${fileId}`, {
       method: "GET",
     });
-    this.municipalities = await response.json();
-    console.log(this.municipalities);
+    const body = await response.json();
+
+    this.municipalities = body.map((municipality) => {
+      return {
+        ...municipality,
+        cost: this.fetchCost(municipality.uri),
+      };
+    });
+  }
+
+  // Hackathon: mocked for now
+  fetchCost(municipalityUri) {
+    console.log("Fetching cost for municipality ...:", municipalityUri);
+    return Math.floor(Math.random() * (125 - 25 + 1)) + 25;
   }
 }
