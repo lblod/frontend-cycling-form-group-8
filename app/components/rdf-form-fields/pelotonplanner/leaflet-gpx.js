@@ -47,9 +47,9 @@ export default class LeafletGpx extends Component {
 
   @action
   async fetchMunicipalities() {
-    const fileId = "66e9eed8a09931000d000006"; // TODO: should not be hardcoded
-
-    const response = await fetch(`/gpx/municipalities?id=${fileId}`, {
+    // Hackathon: normally request needs '?id=<file_id>'
+    // Hackathon: to make sure request always returns mock data, don't set ?id
+    const response = await fetch(`/gpx/municipalities`, {
       method: "GET",
     });
     const body = await response.json();
