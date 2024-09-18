@@ -123,7 +123,7 @@ export default class SubsidyApplicationsEditRoute extends Route {
       },
       {
         displayType:
-          'http://lblod.data.gift/display-types/Documenten',
+          'http://lblod.data.gift/display-types/documenten',
         edit: Documenten,
       },
     ]);

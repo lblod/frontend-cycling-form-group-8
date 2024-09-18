@@ -1,67 +1,121 @@
-<AuLabel>
-  Documenten
-</AuLabel>
+<div class="au-u-margin-bottom">
+  <AuLabel>
+    Aanvrager
+  </AuLabel>
+  <p>
+    Sam De Man
+  </p>
+</div>
+
+<div class="au-u-margin-bottom">
+  <AuLabel>
+    Organisatie
+  </AuLabel>
+  <p>
+    Rondje rond de parking
+  </p>
+</div>
+ 
+ <div class="au-u-margin-bottom">
+  <AuLabel>
+        Datum
+  </AuLabel>
+  <p>
+    Start: 24.02.2024 | 09:00
+    Einddatum: 24.02.2024 | 14:00
+  </p>
+</div>
 
 <AuTable>
-  <:title>Totaal</:title>
+  <:title>Communicatie</:title>
   <:header>
     <tr>
-      <th>Gemeente</th>
-      <th>Bedrag</th>
+      <th>Actor</th>
+      <th>Bestand</th>
+      <th>Type communicatie</th>
     </tr>
   </:header>
   <:body>
     <tr>
-      <td><strong>Aalst</strong></td>
-      <td>25€</td>
+      <td><strong>Inwoners</strong></td>
+      <td><AuLinkExternal>Flyer ontwerp</AuLinkExternal></td>
+      <td>Flyers</td>
     </tr>
-   <tr>
-      <td><strong>Dendermonde</strong></td>
-      <td>75€</td>
+  <tr>
+      <td><strong>Bedrijven</strong></td>
+      <td><AuLinkExternal>Email communicatie</AuLinkExternal></td>
+      <td>Email</td>
     </tr>
     <tr>
-      <td><strong>Aalst</strong></td>
-      <td>25€</td>
+      <td><strong>Scholen</strong></td>
+      <td><AuLinkExternal>Email communicatie</AuLinkExternal></td>
+      <td>Email</td>
     </tr>
   </:body>
-  <:footer>
-    <tr>
-      <th>Totaal</th>
-      <td>€125</td>
-    </tr>
-  </:footer>
 </AuTable>
 
-<AuLabel>
-  Vergunningen
-</AuLabel>
+<div class="au-u-margin-bottom"></div>
 
 <AuTable>
-  <:title>Totaal</:title>
+  <:title>Vergunning</:title>
   <:header>
     <tr>
       <th>Gemeente</th>
-      <th>Bedrag</th>
+      <th>Vergunning</th>
     </tr>
   </:header>
   <:body>
     <tr>
-      <td><strong>Aalst</strong></td>
-      <td>25€</td>
+      <td><strong>Geluid</strong></td>
+      <td><AuLinkExternal>Bestand</AuLinkExternal></td>
     </tr>
-   <tr>
-      <td><strong>Dendermonde</strong></td>
-      <td>75€</td>
+  <tr>
+      <td><strong>Politie</strong></td>
+      <td><AuLinkExternal>Bestand</AuLinkExternal></td>
     </tr>
     <tr>
-      <td><strong>Aalst</strong></td>
-      <td>25€</td>
+      <td><strong>Brand</strong></td>
+      <td><AuLinkExternal>Bestand</AuLinkExternal></td>
     </tr>
   </:body>
-  <:footer>
-    <tr>
-      <th>Totaal</th>
-      <td>€125</td>
-    </tr>
-  </:footer>
 </AuTable>
+
+<div class="au-u-margin-bottom"></div>
+
+<AuTable>
+    <:title>Goedkeuringen</:title>
+    <:header>
+      <tr>
+        <th>Gemeente</th>
+        <th>Status</th>
+        <th>Besluit</th>
+        <th>Voorwaarden</th>
+      </tr>
+    </:header>
+    <:body>
+      <tr>
+        <td><strong>Aalst</strong></td>
+        <td><AuPill @skin="success">goedkeuring</AuPill></td>
+        <td><AuLinkExternal href="https://publicatie.gelinkt-notuleren.vlaanderen.be/Linkebeek/Gemeente/zittingen/1890f360-6944-11ef-ac66-19ee7e4179e3/uittreksels/794d9710-6946-11ef-ac66-19ee7e4179e3">Link naar publicatie</AuLinkExternal></td>
+        <td><AuLinkExternal></AuLinkExternal></td>
+      </tr>
+    <tr>
+        <td><strong>Dendermonde</strong></td>
+        <td><AuPill @skin="success">goedkeuring</AuPill></td>
+        <td><AuLinkExternal href="https://publicatie.gelinkt-notuleren.vlaanderen.be/Linkebeek/Gemeente/zittingen/1890f360-6944-11ef-ac66-19ee7e4179e3/uittreksels/794d9710-6946-11ef-ac66-19ee7e4179e3">Link naar publicatie</AuLinkExternal></td>
+        <td><AuLinkExternal></AuLinkExternal></td>
+      </tr>
+      <tr>
+        <td><strong>Aalst</strong></td>
+        <td><AuPill @skin="warning">Goedgekeurd onder voorwaarden</AuPill></td>
+        <td><AuLinkExternal href="https://publicatie.gelinkt-notuleren.vlaanderen.be/Linkebeek/Gemeente/zittingen/1890f360-6944-11ef-ac66-19ee7e4179e3/uittreksels/794d9710-6946-11ef-ac66-19ee7e4179e3">Link naar publicatie</AuLinkExternal></td>
+        <td><AuLinkExternal href="https://cloud.aatauil.com/s/BfcT2YGoEKwx3ND">Voorwaarden</AuLinkExternal></td>
+      </tr>
+    </:body>
+    <:footer>
+      <tr>
+        <th>Status</th>
+        <td><AuPill @skin="success">Alle goedgekeurd mits onder voorwaarden</AuPill></td>
+      </tr>
+    </:footer>
+  </AuTable>
