@@ -5,7 +5,7 @@
     <main id="content">
       <AuContentHeader
         @titlePartOne="Vlaanderen"
-        @titlePartTwo="is lokaal bestuur"
+        @titlePartTwo="is organiseren"
       >
         <img
           sizes="50vw"
@@ -21,17 +21,9 @@
             <div class="au-o-grid__item au-u-3-4@small au-u-1-2@medium">
               <AuContent @skin="large">
                 <h1>AanvraagPunt</h1>
-                <p>Controleer tot welke organisaties u toegang hebt via deze
-                  <AuLinkExternal
-                    href="https://mijnprofiel-gebruikersbeheer.vlaanderen.be/user/"
-                  >link</AuLinkExternal>. U kan toegang aanvragen door middel
-                  van
-                  <AuLinkExternal
-                    href="https://zelfregistratie-gebruikersbeheer.vlaanderen.be/user/aanvraag?&an=287&dg=LB&ec=ABB_LoketLB_LB_CompEnt_Gebruiker"
-                  >zelfregistratie</AuLinkExternal>. Uw interne beheerder zal de
-                  toegangsaanvraag behandelen.</p>
-                <p>Lukt het aanmelden niet? Neem contact op met uw interne
-                  beheerder. Indien er zich een probleem voordoet, contacteer
+                <p>Een aanvraag doen bij één of meerdere locale overheden? Dit is de plek. Aanvragen en opvolgen op één plek.</p>
+                <p>Toegankelijk voor verenigingen en natuurlijke personen.</p>
+                <p>Indien er zich een probleem voordoet, contacteer
                   <AuLinkExternal
                     href="https://overheid.vlaanderen.be/ict/ict-diensten/gebruikersbeheer"
                   >gebruikersbeheer Vlaanderen</AuLinkExternal>.</p>
@@ -48,14 +40,14 @@
       <section class="au-o-region-large au-u-background-gray-200">
         <div class="au-o-layout">
           <AuContent @skin="large" class="au-u-margin-bottom">
-            <AuHeading @level="2" @skin="3" class="au-u-margin-bottom">De functionaliteiten van AanvraagPunt</AuHeading>
+            <AuHeading @level="2" @skin="3" class="au-u-margin-bottom">Toepassingen van AanvraagPunt</AuHeading>
           </AuContent>
           <div class="au-o-grid au-o-grid--small">
             <div class="au-o-grid__item au-u-1-2@small">
               <AuCard @textCenter="true" as |c|>
                 <c.header @badgeSkin="brand" @badgeIcon="pencil">
                   <AuHeading @level="3" @skin="4">
-                    Functionaliteit
+                    PeletonPlanner
                   </AuHeading>
                 </c.header>
                 <c.content>
@@ -64,13 +56,13 @@
                     @divider={{true}}
                     as |Item|>
                   <Item>
-                    Bekijken van subsidies
+                    Meld een wielerwedstrijd
                     </Item>
                     <Item>
-                      Indienen van subsidies
+                      Verzend toestemming naar de betrokken gemeenten
                     </Item>
                     <Item>
-                      Opvolgen van subsidie aanvragen
+                      Opvolgen van het vergunningsproces
                     </Item>
                   </AuList>
                 </c.content>
