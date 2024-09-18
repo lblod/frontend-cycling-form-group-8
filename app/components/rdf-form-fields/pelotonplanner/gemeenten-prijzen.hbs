@@ -8,6 +8,7 @@
     <:header>
       <tr>
         <th>Gemeente</th>
+        <th>Postcode</th>
         <th>Bedrag</th>
       </tr>
     </:header>
@@ -15,6 +16,7 @@
       {{#each this.municipalities as |municipality|}}
         <tr>
           <td><strong>{{municipality.name}}</strong></td>
+          <td>{{municipality.postalCode}}</td>
           <td>--</td>
         </tr>
       {{/each}}
