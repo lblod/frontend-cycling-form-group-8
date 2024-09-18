@@ -27,4 +27,13 @@ export default class GemeentenPrijzen extends Component {
     console.log("Fetching cost for municipality ...:", municipalityUri);
     return Math.floor(Math.random() * (125 - 25 + 1)) + 25;
   }
+
+  get totalCost() {
+    if (!this.municipalities) return 0;
+
+    return this.municipalities.reduce(
+      (total, municipality) => total + municipality.cost,
+      0
+    );
+  }
 }
