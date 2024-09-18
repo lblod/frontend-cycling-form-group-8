@@ -1,0 +1,7 @@
+<AuLabel>
+  My Leaflet map
+</AuLabel>
+
+<LeafletMap @lat={{this.lat}} @lng={{this.lng}} @zoom={{this.zoom}} style="width: 1000px; height: 400px; border: 2px solid black" @onLoad={{this.setupMap}} as |layers|>
+  <layers.tile class="w-full h-full " @url="https://api.mapbox.com/styles/v1/aatauil/ckofvgb515cya17rykfxk202j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWF0YXVpbCIsImEiOiJja29mdjdrNW8wY3p6Mm5tYTFpOGIzeXMyIn0.lQtGhWtzVQ48jpT9KpBqtg" />
+</LeafletMap>

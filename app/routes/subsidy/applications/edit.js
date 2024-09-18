@@ -17,6 +17,8 @@ import PlanLivingTogetherTableShowComponent from 'frontend-subsidiepunt/componen
 import AccountabilityTableEditComponent from 'frontend-subsidiepunt/components/rdf-form-fields/accountability-table/edit';
 import AccountabilityTableShowComponent from 'frontend-subsidiepunt/components/rdf-form-fields/accountability-table/show';
 import FinancingTotalsComponent from 'frontend-subsidiepunt/components/rdf-form-fields/urban-renewal/financing-totals';
+import LeafletGpx from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/leaflet-gpx';
+import GemeentenPrijzen from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/gemeenten-prijzen';
 
 export default class SubsidyApplicationsEditRoute extends Route {
   @service store;
@@ -101,6 +103,16 @@ export default class SubsidyApplicationsEditRoute extends Route {
         displayType:
           'http://lblod.data.gift/display-types/urbanRenewalFinancingTotals',
         edit: FinancingTotalsComponent,
+      },
+      {
+        displayType:
+          'http://lblod.data.gift/display-types/gpx-leaflet',
+        edit: LeafletGpx,
+      },
+      {
+        displayType:
+          'http://lblod.data.gift/display-types/gemeenten-prijzen',
+        edit: GemeentenPrijzen,
       },
     ]);
   }
