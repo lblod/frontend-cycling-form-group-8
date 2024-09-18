@@ -6,7 +6,7 @@ export default class ApplicationController extends Controller {
   @service() currentSession;
   @service() router;
 
-  appTitle = 'PeletonPlanner';
+  appTitle = 'AanvraagPunt';
 
   get isIndexOrLoading() {
     return (
