@@ -7,7 +7,7 @@ export default class BreadCrumbComponent extends Component {
   bread = [
     {
       route: 'subsidy.applications.index',
-      crumbs: [{ label: 'Subsidiebeheer' }],
+      crumbs: [{ label: 'Aanvraagbeheer' }],
     },
     {
       route: 'subsidy.applications.available-subsidies',
