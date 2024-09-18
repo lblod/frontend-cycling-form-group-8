@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import 'leaflet-gpx'; // Import the GPX plugin
 
+
 export default class LeafletGpx extends Component {
   @service('ember-leaflet') leaflet; // Accessing ember-leaflet service
   
@@ -28,7 +29,7 @@ export default class LeafletGpx extends Component {
       return;
     }
 
-    const url = '/blauwe-lus.gpx';
+    const url = '/assets/blauwe-lus.gpx';
     const options = {
       async: true,
       polyline_options: { color: 'red' },
