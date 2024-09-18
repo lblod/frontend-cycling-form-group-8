@@ -1,5 +1,5 @@
-import Application from 'frontend-subsidiepunt/app';
-import config from 'frontend-subsidiepunt/config/environment';
+import Application from 'frontend-AanvraagPunt/app';
+import config from 'frontend-AanvraagPunt/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

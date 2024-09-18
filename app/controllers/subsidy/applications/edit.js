@@ -4,7 +4,7 @@ import { task } from 'ember-concurrency';
 import fetch from 'fetch';
 import { action } from '@ember/object';
 import { downloadZip } from 'client-zip';
-import { triggerZipDownload } from 'frontend-subsidiepunt/utils/download';
+import { triggerZipDownload } from 'frontend-AanvraagPunt/utils/download';
 import { tracked } from '@glimmer/tracking';
 
 export default class SubsidyApplicationsEditController extends Controller {

@@ -1,5 +1,5 @@
-import config from 'frontend-subsidiepunt/config/environment';
-import isFeatureEnabled from 'frontend-subsidiepunt/helpers/is-feature-enabled';
+import config from 'frontend-AanvraagPunt/config/environment';
+import isFeatureEnabled from 'frontend-AanvraagPunt/helpers/is-feature-enabled';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | is-feature-enabled', function () {

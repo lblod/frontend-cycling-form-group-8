@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import ENV from 'frontend-subsidiepunt/config/environment';
+import ENV from 'frontend-AanvraagPunt/config/environment';
 
 export default class AuthLogoutRoute extends Route {
   @service router;

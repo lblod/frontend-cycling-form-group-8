@@ -1,6 +1,6 @@
-# frontend-subsidiepunt
+# frontend-AanvraagPunt
 
-Frontend of the subsidiepunt application
+Frontend of the AanvraagPunt application
 
 ## Environment variables
 

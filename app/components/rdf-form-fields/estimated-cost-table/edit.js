@@ -17,9 +17,9 @@ import {
   costPredicate,
   validEstimatedCostTable,
 } from './base-table';
-import { MU, RDF } from 'frontend-subsidiepunt/rdf/namespaces';
+import { MU, RDF } from 'frontend-AanvraagPunt/rdf/namespaces';
 
-import commasToDecimalPointsFix from 'frontend-subsidiepunt/utils/subsidies-decimal-point';
+import commasToDecimalPointsFix from 'frontend-AanvraagPunt/utils/subsidies-decimal-point';
 
 const defaultRows = [
   {

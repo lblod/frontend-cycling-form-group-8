@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'frontend-subsidiepunt',
+    modulePrefix: 'frontend-AanvraagPunt',
     environment,
     rootURL: '/',
     locationType: 'history',
@@ -26,7 +26,7 @@ module.exports = function (environment) {
     acmidm: {
       clientId: '{{ACMIDM_CLIENT_ID}}',
       scope:
-        'openid vo rrn profile wettelijkevertegenwoordiger abb_subsidiepunt',
+        'openid vo rrn profile wettelijkevertegenwoordiger abb_AanvraagPunt',
       authUrl: '{{ACMIDM_AUTH_URL}}',
       logoutUrl: '{{ACMIDM_LOGOUT_URL}}',
       authRedirectUrl: '{{ACMIDM_AUTH_REDIRECT_URL}}',

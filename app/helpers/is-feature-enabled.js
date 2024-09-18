@@ -1,4 +1,4 @@
-import config from 'frontend-subsidiepunt/config/environment';
+import config from 'frontend-AanvraagPunt/config/environment';
 import { assert } from '@ember/debug';
 
 export default function isFeatureEnabled(featureName) {

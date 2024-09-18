@@ -1,7 +1,7 @@
 import Service, { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { setContext, setUser } from '@sentry/ember';
-import { SHOULD_ENABLE_SENTRY } from 'frontend-subsidiepunt/utils/sentry';
+import { SHOULD_ENABLE_SENTRY } from 'frontend-AanvraagPunt/utils/sentry';
 
 export default class CurrentSessionService extends Service {
   @service session;

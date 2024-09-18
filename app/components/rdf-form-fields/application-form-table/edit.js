@@ -11,7 +11,7 @@ import {
   MU,
   RDF,
   XSD,
-} from 'frontend-subsidiepunt/rdf/namespaces';
+} from 'frontend-AanvraagPunt/rdf/namespaces';
 
 const applicationFormTableBaseUri =
   'http://data.lblod.info/application-form-tables';

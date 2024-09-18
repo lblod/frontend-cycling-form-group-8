@@ -1,11 +1,11 @@
 {
-  "name": "frontend-subsidiepunt",
+  "name": "frontend-AanvraagPunt",
   "version": "2.1.0",
   "private": true,
-  "description": "Frontend of subsidiepunt",
+  "description": "Frontend of AanvraagPunt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lblod/frontend-subsidiepunt.git"
+    "url": "git+https://github.com/lblod/frontend-AanvraagPunt.git"
   },
   "license": "MIT",
   "author": "redpencil.io",
