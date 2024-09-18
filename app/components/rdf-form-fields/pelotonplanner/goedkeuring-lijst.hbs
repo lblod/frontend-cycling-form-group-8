@@ -2,32 +2,42 @@
   Goedkeuring lijst
 </AuLabel>
 
+<AuButton>Vernieuw data</AuButton>
+
 <AuTable>
   <:title>Goedkeuringen</:title>
   <:header>
     <tr>
       <th>Gemeente</th>
       <th>Status</th>
+      <th>Besluit</th>
+      <th>Voorwaarden</th>
     </tr>
   </:header>
   <:body>
     <tr>
       <td><strong>Aalst</strong></td>
-      <td>goedgekeurd</td>
+      <td><AuPill @skin="success">goedkeuring</AuPill></td>
+      <td><AuLink>Link naar publicatie</AuLink></td>
+      <td><AuLink></AuLink></td>
     </tr>
    <tr>
       <td><strong>Dendermonde</strong></td>
-      <td>Wacht op goedkeuring</td>
+      <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
+      <td><AuLink></AuLink></td>
+      <td><AuLink></AuLink></td>
     </tr>
     <tr>
       <td><strong>Aalst</strong></td>
-      <td>Wacht op goedkeuring</td>
+      <td><AuPill @skin="warning">Goedgekeurd onder voorwaarden</AuPill></td>
+      <td><AuLink>Link naar publicatie</AuLink></td>
+      <td><AuLink>Voorwaarden</AuLink></td>
     </tr>
   </:body>
   <:footer>
     <tr>
       <th>Status</th>
-      <td>Wacht op goedkeuring</td>
+      <td><AuPill @skin="border">Wacht op alle goedkeuringen</AuPill></td>
     </tr>
   </:footer>
 </AuTable>
