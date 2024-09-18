@@ -1,43 +1,88 @@
-<AuLabel>
-  Goedkeuring lijst
-</AuLabel>
+{{#if this.refreshed}}
 
-<AuButton>Vernieuw data</AuButton>
+  <AuLabel>
+    Goedkeuring lijst
+  </AuLabel>
 
-<AuTable>
-  <:title>Goedkeuringen</:title>
-  <:header>
+  <AuTable>
+    <:title>Goedkeuringen</:title>
+    <:header>
+      <tr>
+        <th>Gemeente</th>
+        <th>Status</th>
+        <th>Besluit</th>
+        <th>Voorwaarden</th>
+      </tr>
+    </:header>
+    <:body>
+      <tr>
+        <td><strong>Aalst</strong></td>
+        <td><AuPill @skin="success">goedkeuring</AuPill></td>
+        <td><AuLink>Link naar publicatie</AuLink></td>
+        <td><AuLink></AuLink></td>
+      </tr>
     <tr>
-      <th>Gemeente</th>
-      <th>Status</th>
-      <th>Besluit</th>
-      <th>Voorwaarden</th>
-    </tr>
-  </:header>
-  <:body>
-    <tr>
-      <td><strong>Aalst</strong></td>
-      <td><AuPill @skin="success">goedkeuring</AuPill></td>
-      <td><AuLink>Link naar publicatie</AuLink></td>
-      <td><AuLink></AuLink></td>
-    </tr>
-   <tr>
-      <td><strong>Dendermonde</strong></td>
-      <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
-      <td><AuLink></AuLink></td>
-      <td><AuLink></AuLink></td>
-    </tr>
-    <tr>
-      <td><strong>Aalst</strong></td>
-      <td><AuPill @skin="warning">Goedgekeurd onder voorwaarden</AuPill></td>
-      <td><AuLink>Link naar publicatie</AuLink></td>
-      <td><AuLink>Voorwaarden</AuLink></td>
-    </tr>
-  </:body>
-  <:footer>
-    <tr>
-      <th>Status</th>
-      <td><AuPill @skin="border">Wacht op alle goedkeuringen</AuPill></td>
-    </tr>
-  </:footer>
-</AuTable>
+        <td><strong>Dendermonde</strong></td>
+        <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
+        <td><AuLink></AuLink></td>
+        <td><AuLink></AuLink></td>
+      </tr>
+      <tr>
+        <td><strong>Aalst</strong></td>
+        <td><AuPill @skin="warning">Goedgekeurd onder voorwaarden</AuPill></td>
+        <td><AuLink>Link naar publicatie</AuLink></td>
+        <td><AuLink>Voorwaarden</AuLink></td>
+      </tr>
+    </:body>
+    <:footer>
+      <tr>
+        <th>Status</th>
+        <td><AuPill @skin="border">Wacht op alle goedkeuringen</AuPill></td>
+      </tr>
+    </:footer>
+  </AuTable>
+  {{else}}
+    <AuButton class="au-u-margin-bottom" {{on 'click' (fn (mut this.refreshed) true)}}>Harvest besluiten</AuButton>
+
+    <AuLabel>
+      Goedkeuring lijst
+    </AuLabel>
+
+    <AuTable>
+      <:title>Goedkeuringen</:title>
+      <:header>
+        <tr>
+          <th>Gemeente</th>
+          <th>Status</th>
+          <th>Besluit</th>
+          <th>Voorwaarden</th>
+        </tr>
+      </:header>
+      <:body>
+        <tr>
+          <td><strong>Aalst</strong></td>
+          <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
+          <td></td>
+          <td><AuLink></AuLink></td>
+        </tr>
+      <tr>
+          <td><strong>Dendermonde</strong></td>
+          <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
+          <td><AuLink></AuLink></td>
+          <td><AuLink></AuLink></td>
+        </tr>
+        <tr>
+          <td><strong>Aalst</strong></td>
+          <td><AuPill @skin="border">Wacht op goedkeuring</AuPill></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </:body>
+      <:footer>
+        <tr>
+          <th>Status</th>
+          <td><AuPill @skin="border">Wacht op alle goedkeuringen</AuPill></td>
+        </tr>
+      </:footer>
+    </AuTable>
+  {{/if}}
