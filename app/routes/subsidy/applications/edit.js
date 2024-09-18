@@ -20,6 +20,7 @@ import FinancingTotalsComponent from 'frontend-subsidiepunt/components/rdf-form-
 import LeafletGpx from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/leaflet-gpx';
 import GemeentenPrijzen from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/gemeenten-prijzen';
 import GoedkeuringLijst from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/goedkeuring-lijst';
+import Documenten from 'frontend-subsidiepunt/components/rdf-form-fields/pelotonplanner/documenten';
 
 export default class SubsidyApplicationsEditRoute extends Route {
   @service store;
@@ -119,6 +120,11 @@ export default class SubsidyApplicationsEditRoute extends Route {
         displayType:
           'http://lblod.data.gift/display-types/goedkeuring-lijst',
         edit: GoedkeuringLijst,
+      },
+      {
+        displayType:
+          'http://lblod.data.gift/display-types/Documenten',
+        edit: Documenten,
       },
     ]);
   }
